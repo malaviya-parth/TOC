@@ -1,3 +1,7 @@
+## It is not possible in DFA to have more than one transition for a given state and input symbol, Hence with null move in DF we will be at the current state only.
+
+## In NFA we can have more than one transition for a given state and input symbol, Hence with null move in NFA we can be at the current state or we can go to other state as well.
+
 - In the NFA diagram if there is a path from one state to other state with null move, means it can move to other state without reading any input symbol, then it is called NFA with null move.
 
 - Whenever there is a null move we have two choices either we can take null move or we can take input symbol.
@@ -63,3 +67,6 @@
 - Example
 
 ![Example of above said method](image-5.png)
+
+### Summary 
+![Alt text](image-6.png)
