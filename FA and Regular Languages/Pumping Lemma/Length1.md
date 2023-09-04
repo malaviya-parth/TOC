@@ -48,6 +48,7 @@
 6. M.P.L. for L = $\phi$ is 1.
 7. M.P.L. for L = { $\epsilon$ } is 1.
 8. If |w| = M.P.L., then w may not $\in$ L.
-9. $L = L_{1} \cup L_{2}$ & $L_{1} \cap L_{2} = \phi$ then M.P.L. for L = max(M.P.L. for $L_{1}$, M.P.L. for $L_{2}$).
+9. $L = L_{1} \cup L_{2}$ & $L_{1} \cap L_{2} = \phi$ then M.P.L.(L) $\leq$ max(M.P.L. for $L_{1}$, M.P.L. for $L_{2}$).
     - L = {$a^{n} | n \geq 2 \cup b^{n}$ | n $\geq$ 4}, then P.L. = 5
     - P.L. for first is 3, P.L. for second is 5 $\therefore$ P.L. for L is 5.
+10. M.P.L. for $\Sigma^{*}$ is 1.
