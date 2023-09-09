@@ -15,4 +15,4 @@
 5. PDA
 6. DCFLs
    1. DCFL lies between Regular and CFL
-
+7. Additional Closure Properties
