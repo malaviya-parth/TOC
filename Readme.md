@@ -1,3 +1,3 @@
-**Closure Properties V.V.I.M.P.**
-- 1-2 questions on Closure Properties
-- 2-3 questions from Regular Expression
+- 3-4 Questions from chapter -1
+- 1-2 Questions from chapter -2
+- 2-3 Questions from chapter -3
