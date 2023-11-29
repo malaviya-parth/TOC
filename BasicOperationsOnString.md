@@ -70,7 +70,7 @@
 > If we concatenate n string in any order, the resultant length will be same for all the orders.
 
 #### Question
-Q. Consider a string u.v where u $\in \sum and v \in \sum^{*}$. Which of the following is true?
+Q. Consider a string u.v where u $\in \sum and v \in \Sigma^{*}$. Which of the following is true?
 1. |u| $\le$ |v|
 2. |u| $\ge$ |v|
 3. |u| = |v|
@@ -79,7 +79,7 @@ Q. Consider a string u.v where u $\in \sum and v \in \sum^{*}$. Which of the fol
     **A. |u| $\le$ |v|** <br>
     **Explanation:** |u| $\le$ |v| is true because u is a single character and v is a string of length 0 or more.
 
-Q. Consider a string u.v where u $\in \sum and v \in \sum^{*}$. What can be the length of u.v?
+Q. Consider a string u.v where u $\in \sum and v \in \Sigma^{*}$. What can be the length of u.v?
 1. |u| + |v|
 2. 1 + |v|
 3. Both 1 and 2
