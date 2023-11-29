@@ -65,7 +65,7 @@
 - Finite Length string are present in the language.
 - MPL = | $w_{max}$ | + 1 = 6 + 1 = 7
 
-## Q7 All possible strings over except strings of length 3
+## Q7 All possible strings over a & b except strings of length 3
 - L = { $\epsilon$ , a, b, ab, ba, aa, bb} $\cup$ (a+b)(a+b)(a+b)(a+b)(a+b)*
 - MPL( $L_{1}$ ) = | $w_{max}$ | + 1 = 2 + 1 = 3
 - MPL( $L_{2}$ ) = | $w_{min}$ | + 1 = 4 + 1 = 5
