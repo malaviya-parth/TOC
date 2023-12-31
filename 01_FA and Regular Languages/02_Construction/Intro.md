@@ -15,7 +15,7 @@
     3. Output (Y: String is accepted, N:String is rejected)
 
 - It is represented by **"5 Tuple"**
-- Those 5 tuple are Q,$\Sigma,\delta,q_{0},f$
+- Those 5 tuple are Q, $\Sigma,\delta,q_{0},f$
     - Q = Non-Empty finite state of States
     - $\Sigma$ = Imput Alphabet (Finite and Non-Empty set of Symbols)
     - $q_{0}$ = initial state (without reading any input symbol) $q_{0}$ belongs to Q
@@ -32,11 +32,11 @@
     2. NFA (Non-Deterministic Finite Automata)
 
 - DFA function is represented by Q x $\Sigma$ -> Q
-- Example: Q = {$q_{0}, q_{1}, q_{2}$}
+- Example: Q = { $q_{0}, q_{1}, q_{2}$ }
            $\Sigma$ = {a,b}
     then: 
     Q x $\Sigma$ = ${ (q_{0},a), (q_{0},b), (q_{1},a), (q_{1},b), (q_{2},a), (q_{2},b) }$
-    and it is mapped Many-to-one to Q = {$q_{0},q_{1},q_{2}$}
+    and it is mapped Many-to-one to Q = { $q_{0},q_{1},q_{2}$ }
 
     - Functions are written as:
         - $\delta(q_{0},a) = q_{0}$
@@ -46,11 +46,11 @@
 - For every input symbol we get a unique move
 
 - NFA is represented as Q x $\Sigma$ -> $2^{Q}$
-- Example: Q = {$q_{0}, q_{1}$}
+- Example: Q = { $q_{0}, q_{1}$ }
            $\Sigma$ = {a,b}
     then:
         Q x $\Sigma$ =  ${ (q_{0},a), (q_{0},b), (q_{1},a), (q_{1},b) }$ is mapped to $2^{Q}$, where
-        $2^{Q}$ = ${ \phi, {q_{0}}, {q_{1}}, {q_{0},q_{1}} }$
+        $2^{Q}$ = { $\phi$ , { $q_{0}$ }, { $q_{1}$ }, { $q_{0},q_{1}$ } }
 
     - Functions are written same as above
     - $\delta(q_{1},a) = \phi$
