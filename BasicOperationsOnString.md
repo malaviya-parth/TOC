@@ -16,10 +16,10 @@
 #### Properties of Power of Strings
 
 - $S^{0}$ = ε
-- (ab)$^{2}$ $\neq$ a$^{2}$b$^{2}$
-- (ab)$^{2}$ $\neq$ (ba)$^{2}$
-- (ab)$^{2}$. (ab)$^{3}$ = (ab)$^{5}$ = (ab)$^{3}$. (ab)$^{2}$
-- $((ab)^{2})^{3}$ = (ab)$^{6}$ 
+- (ab) $^{2}$ $\neq$ $a^{2} b^{2}$
+- (ab) $^{2}$ $\neq$ (ba) $^{2}$
+- (ab) $^{2}$ . (ab) $^{3}$ = (ab) $^{5}$ = (ab) $^{3}$ . (ab) $^{2}$
+- $((ab)^{2})^{3}$ = (ab) $^{6}$ 
 
 #### Proof of No Negative Power of Strings
 
@@ -37,21 +37,21 @@
     - Also, $\epsilon$ . $S^{2}$ = $S^{0+2}$ = $S^{2}$ = abab  
     - Hence, $S^{0}$ = ε
 
-#### Power of $\epsilon$
+#### Power of $\Sigma$
 
-- Let $\epsilon$ = {a,b}
-- $\epsilon^{0}$ = {ε}, It is a language which contains all the strings of length 0.
-- $\epsilon^{1}$ = {a,b}, It is a language which contains all the strings of length 1.
-- $\epsilon^{2}$ = {aa,ab,ba,bb}, It is a language which contains all the strings of length 2.
-- $\epsilon^{3}$ = {aaa,aab,aba,abb,baa,bab,bba,bbb}, It is a language which contains all the strings of length 3.
-- $\epsilon^{*}$ is union of all languages of all lengths. It is called the Kleene Closure of $\epsilon$. It is largest possible language and hence, also called Universal Language.
-- $\epsilon^{+}$ is union of all languages of all lengths except the empty string. It is called the Positive Closure of $\epsilon$.
+- Let $\Sigma$ = {a,b}
+- $\Sigma^{0}$ = {ε}, It is a language which contains all the strings of length 0.
+- $\Sigma^{1}$ = {a,b}, It is a language which contains all the strings of length 1.
+- $\Sigma^{2}$ = {aa,ab,ba,bb}, It is a language which contains all the strings of length 2.
+- $\Sigma^{3}$ = {aaa,aab,aba,abb,baa,bab,bba,bbb}, It is a language which contains all the strings of length 3.
+- $\Sigma^{*}$ is union of all languages of all lengths. It is called the Kleene Closure of $\Sigma$. It is largest possible language and hence, also called Universal Language.
+- $\Sigma^{+}$ is union of all languages of all lengths except the empty string. It is called the Positive Closure of $\Sigma$.
 <br><br>
-- $\epsilon^{*}$ is Countably Infinite.
-- Every Language is a subset of $\epsilon^{*}$.
-- If L is a set of Languages in $\epsilon^{*}$, then L is Uncountably Infinite. Number of elements in L = $2^{|\epsilon^{*}|}$
-- If L is a set of Languages in $\epsilon$^{+}, then Number of elements in L = $2^{|\epsilon^{*}|} - 1$
-- $\epsilon^{+}$ = $\epsilon^{*} - {ε}$
+- $\Sigma^{*}$ is Countably Infinite.
+- Every Language is a subset of $\Sigma^{*}$.
+- If L is a set of Languages in $\Sigma^{\*}$ , then L is Uncountably Infinite. Number of elements in L = $2^{|\Sigma^{\*}|}$
+- If L is a set of Languages in $\Sigma^{+}$ , then Number of elements in L = $2^{|\Sigma^{\*}|} - 1$
+- $\Sigma^{+}$ = $\Sigma^{*} - {ε}$
 
 ## Concatenation of Strings
 
@@ -70,7 +70,7 @@
 > If we concatenate n string in any order, the resultant length will be same for all the orders.
 
 #### Question
-Q. Consider a string u.v where u $\in \sum and v \in \Sigma^{*}$. Which of the following is true?
+Q. Consider a string u.v where u $\in \Sigma and v \in \Sigma^{*}$. Which of the following is true?
 1. |u| $\le$ |v|
 2. |u| $\ge$ |v|
 3. |u| = |v|
@@ -79,7 +79,7 @@ Q. Consider a string u.v where u $\in \sum and v \in \Sigma^{*}$. Which of the f
     **A. |u| $\le$ |v|** <br>
     **Explanation:** |u| $\le$ |v| is true because u is a single character and v is a string of length 0 or more.
 
-Q. Consider a string u.v where u $\in \sum and v \in \Sigma^{*}$. What can be the length of u.v?
+Q. Consider a string u.v where u $\in \Sigma and v \in \Sigma^{*}$. What can be the length of u.v?
 1. |u| + |v|
 2. 1 + |v|
 3. Both 1 and 2
@@ -97,18 +97,18 @@ Q. Consider a string u.v where u $\in \sum and v \in \Sigma^{*}$. What can be th
 
 #### Properties of Reverse of a String
 
-- (S.T)$^{R}$ = $T^{R}.S^{R}$
+- (S.T) $^{R}$ = $T^{R}.S^{R}$
 - $(S^{R})^{R}$ = S
 - |S| = $|S^{R}|$
 - $(S^{n})^{R}$ = $(S^{R})^{n}$
-- If $\sum$ = {a} and u $\in \sum^{*}$, then u = $u^{R}$
+- If $\Sigma$ = {a} and u $\in \Sigma^{*}$, then u = $u^{R}$
 - For case of palindromes, S = $S^{R}$
 
 ### Palindrome
 
 - Can be even palindrome or odd palindrome
-- Even palindrome Notation: U . $U^{R}$ | U $\in \sum^{*}$
-- Odd palindrome Notation: U . V . $U^{R}$ | U $\in \sum^{*}$, V $\in \sum$, V $\neq$ ε
+- Even palindrome Notation: U . $U^{R}$ | U $\in \Sigma^{*}$
+- Odd palindrome Notation: U . V . $U^{R}$ | U $\in \Sigma^{*}$, V $\in \Sigma$, V $\neq$ ε
 
 #### Question
 
@@ -122,7 +122,7 @@ Q. Number of strings of length n which are even binary palindromes?
     **Explanation:** <br>
     Let n = 4, now U will be of length 2 and $U^{R}$ will also be of length 2. <br>
     For binary strings, U can be 00, 01, 10, 11. <br>
-    Also, U^{R} will be same as of U. <br>
+    Also, $U^{R}$ will be same as of U. <br>
     Hence, total number of strings = 4. <br>
 
 Q. Number of strings of length n which are odd binary palindromes?
@@ -135,7 +135,7 @@ Q. Number of strings of length n which are odd binary palindromes?
     **Explanation:** <br>
     Let n = 5, now U will be of length 2 and $U^{R}$ will also be of length 2. <br>
     For binary strings, U can be 00, 01, 10, 11. <br>
-    Also, U^{R} will be same as of U. <br>
+    Also, $U^{R}$ will be same as of U. <br>
     Hence, total number of strings = 4. <br>
     Now, V can be 0 or 1. <br>
     Hence, total number of strings = 4 * 2 = 8. <br>
@@ -162,7 +162,7 @@ Q. Number of strings of length n which are odd binary palindromes?
 
 Q. Number of substrings of a string S of length n?
 
-1. Let's take an example, $\sum$ = {A...Z}, n = 5, S = NITIN
+1. Let's take an example, $\Sigma$ = {A...Z}, n = 5, S = NITIN
 - Substrings of length 0 = 1 ,i.e., ε
 - Substrings of length 1 = 3, i.e., N, I, T (Removed I and N as repeated)
 - Substrings of length 2 = 4, i.e., NI, IT, TI, IN (now here since no repetition occurred further no need to check for repetition)

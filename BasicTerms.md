@@ -43,8 +43,8 @@
 - Language can be finite or infinite.
 - $\phi$ is a language which contains no string. It is called the empty language.
 
-- $\epsilon$^{*} is union of all languages of all lengths. It is called the Kleene Closure of $\epsilon$. Also called Universal Language.
-- $\epsilon$^{+} is union of all languages of all lengths except the empty string. It is called the Positive Closure of $\epsilon$.
+- $\Sigma^{*}$ is union of all languages of all lengths. It is called the Kleene Closure of $\epsilon$. Also called Universal Language.
+- $\Sigma^{+}$ is union of all languages of all lengths except the empty string. It is called the Positive Closure of $\epsilon$.
 
 **Important Examples of Languages**
 - For Σ = {a,b,0}
@@ -59,11 +59,11 @@
 
 **Note:** <br>
     - $a^0 = ε$ <br>
-    - $\sum^{0}$ = {ε} <br>
+    - $\Sigma^{0}$ = {ε} <br>
     - $\epsilon \not \in \sum$ <br>
     - When we write $u \in \sum$, it means that u is a string of length 1. <br>
-    - When we write $u \in \sum^{*}$, it means that u is a string of any length including 0. <br>
-    - When we write $u \in \sum^{+}$, it means that u is a string of any length except 0. <br>
+    - When we write $u \in \Sigma^{*}$, it means that u is a string of any length including 0. <br>
+    - When we write $u \in \Sigma^{+}$, it means that u is a string of any length except 0. <br>
 
 ## Questions
 

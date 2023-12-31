@@ -8,29 +8,34 @@
 
 ![Notations](image.png)
 
-![Transition Diagram](image-1.png) <br>
-From Diagram: <br>
-    - Q = {q0,q1,q2} <br>
-    - $\Sigma$ = {a} <br>
-    - $\delta$ : <br>
-        - $\delta(q_{0},a)$ = { $q_{1}$ } <br>
-        - $\delta(q_{1},a)$ = { $q_{2}$ } <br>
-        - $\delta(q_{2},a)$ = { $q_{0}$ } <br>
-    - $q_{0}$ = q0 <br>
-    - f = { $q_{2}$ } <br>
-**Delta Diagram** <br>
+![Transition Diagram](image-1.png)
+
+From Diagram:
+- Q = {q0,q1,q2}
+- $\Sigma$ = {a}
+- $\delta$ :
+- $\delta(q_{0},a)$ = { $q_{1}$ } <br>
+- $\delta(q_{1},a)$ = { $q_{2}$ } <br>
+- $\delta(q_{2},a)$ = { $q_{0}$ } <br>
+- $q_{0}$ = q0 <br>
+- f = { $q_{2}$ }  
+
+**Delta Diagram**  
+
 ![Delta Function Diagram](image-2.png)
 
 ### Example 1 Related to Above Transition Diagram
-![General Visualization Example](image-3.png) <br>
+
+![General Visualization Example](image-3.png)  
+
 Here $\Sigma$ = {a} <br>
-$\therefore \Sigma^{*} ={ \{\epsilon, a, aa, aaa, ...  \}} $ <br>
+$\therefore \Sigma^{*} ={ \{\epsilon, a, aa, aaa, ...  \}}$ <br>
 **From Below Definition Accepted Strings will be**
-- $ aa, a^{5}, a^{8}, a^{11}, ... $ <br>
+- $aa, a^{5}, a^{8}, a^{11}, ...$ <br>
 
 **Accepted Languages are**
-- L = { $ a^{2}, a^{5}, a^{8}, ... $ } <br>
-- $\therefore$ L = { $a^{3n+2}|n \ge 0 $ } = { $a^{3n+2}|n > -1 $ }, { $a^{3n-1}|n \ge 1 $ }, { $a^{3n-1}|n > 0 $ }, { $a^{3n-4}|n \ge 2 $ }, etc.. **For MSQ Purpose**
+- L = { $a^{2}, a^{5}, a^{8}, ...$ } <br>
+- $\therefore$ L = { $a^{3n+2}|n \ge 0$ } = { $a^{3n+2}|n > -1$ }, { $a^{3n-1}|n \ge 1$ }, { $a^{3n-1}|n > 0$ }, { $a^{3n-4}|n \ge 2$ }, etc.. **For MSQ Purpose**
 
 ### String Accepted by DFA
 1. Start from $q_{0}$
@@ -46,8 +51,8 @@ $\therefore \Sigma^{*} ={ \{\epsilon, a, aa, aaa, ...  \}} $ <br>
 **Suppose in the above Diagram instead of q2, q0 and q2 both can be final state then:**
 - Above Language cannot be said to be accepted language because it misses some Strings which are accepted.
 - Strings accepted are:
-    - $\epsilon, a^{2}, a^{3}, a^{5}, a^{6}, a^{8}, a^{9}, ... $
-- $\therefore$ L = { $a^{3n+2} \cup a^{3m} | n,m \ge 0 $ }
+    - $\epsilon, a^{2}, a^{3}, a^{5}, a^{6}, a^{8}, a^{9}, ...$
+- $\therefore$ L = { $a^{3n+2} \cup a^{3m} | n,m \ge 0$ }
 
 ## Transition Table
 ![Alt text](image-4.png)
@@ -63,9 +68,9 @@ Each cell must have exactly one entry State.
 
 ![Alt text](image-7.png)
 
-- Accepted Strings are $ a^{2}, a^{3}, a^{4}, a^{5}, ... $
-- L = { $ a^{2}, a^{3}, a^{4}, a^{5}, ... $ }
-- L = { $ a^{n} | n \ge 2 $}
+- Accepted Strings are $a^{2}, a^{3}, a^{4}, a^{5}, ...$
+- L = { $a^{2}, a^{3}, a^{4}, a^{5}, ...$ }
+- L = { $a^{n} | n \ge 2$ }
 
 **State Transition Function** 
 
