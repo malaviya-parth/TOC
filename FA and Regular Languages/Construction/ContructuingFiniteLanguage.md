@@ -92,3 +92,6 @@
 ## Every 'a' is never followed by 'bb'
 
 ![Alt text](image-80.png)
+
+## L = {$a^nb^m | n=m mod 3$}
+![Alt text](image-88.png)
