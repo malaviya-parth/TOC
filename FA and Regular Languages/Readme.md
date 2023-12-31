@@ -1,4 +1,4 @@
-## TOpics to be covered in this module
+## Topics to be covered in this module
 
 - Introduction to finite Automata
 - Construction of FA *****
