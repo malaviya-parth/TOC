@@ -4,27 +4,27 @@
 - If started with undesired string send it to **Permanent Reject**
 
 **Construct an FA for strings over a & b, starting with a.**
-- Below is DFA, for NFA we can remove the Permanent Dead State q2
+- Below is DFA, for NFA we can remove the Permanent Dead State q2  
 ![NFA,DFA](image-32.png)
 
 **Construct an FA for strings over a&b starting with 'aa'.**
-- Below given is DFA, for NFA we can remove the Permanent Dead State q3
+- Below given is DFA, for NFA we can remove the Permanent Dead State q3  
 ![NFA,DFA](image-33.png)
 
 **Construct an FA for strings over a&b starting with 'ba'.**
-- Below given is DFA, for NFA we can remove the Permanent Dead State q3
+- Below given is DFA, for NFA we can remove the Permanent Dead State q3  
 ![NFA,DFA](image-34.png)
 
 # If |S| = n => NFA = (n+1), DFA = (n+2)
 
 ## Starting and Ending Merge cases
 
-**Construct an FA for strings over a&b starting with 'a' and ending with 'b.**
+**Construct an FA for strings over a&b starting with 'a' and ending with 'b.**  
 ![NFA](image-35.png)
 ![DFA](image-36.png)
 - Line drawn shows that never include the states that leads to permanent dead state
 
-**Construct an FA for strings over a&b starting with 'a' and ending with 'a'.**
+**Construct an FA for strings over a&b starting with 'a' and ending with 'a'.**  
 ![DFA](image-37.png)
 - For NFA remove the q2 dead state
 
@@ -35,7 +35,7 @@
 - q0 is final for S = $\epsilon$, q1 is final for S = a,aa,aba,...
 - q2 is final for S = b,bb,bab,...
 
-**Construct an FA that start and end with different letter over a&b.**
+**Construct an FA that start and end with different letter over a&b.**  
 ![DFA](image-39.png)
 
 ### From above 2 question you may have noticed that only final states are change

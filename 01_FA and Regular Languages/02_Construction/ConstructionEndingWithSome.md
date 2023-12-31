@@ -6,7 +6,7 @@
 
 #### Intuition
 - Starting whatever we give ending must be from a
-- So to reach final state we have a and oje more state will b required for looping over first state.
+- So to reach final state we have a and oje more state will b required for looping over first state.  
 ![Answer Image](image-17.png)
 
 ### Converting given NFA to DFA
@@ -15,7 +15,7 @@
 - Also at q1 no paths is defined so we need to define paths
     - Reading a we have to make self loop as ends with 'a' must satisfy after readinf we are at final state.
     - Second, now we need path for b, we can't define it to other new state as it might go either dead state or the same thing as q1 will happen.
-    - One thing is we give the path to q0 as any accpeted stirng will have atleast one a which will again redirect us to q1.
+    - One thing is we give the path to q0 as any accpeted stirng will have atleast one a which will again redirect us to q1.  
 ![DFA Answer](image-18.png)
 
 For understanding purpose

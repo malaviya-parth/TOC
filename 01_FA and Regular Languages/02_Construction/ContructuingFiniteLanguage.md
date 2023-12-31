@@ -5,67 +5,67 @@
 # Theorem for Finite Language
 
 - **If for the given language L, the maximum string length is n, then**
-    - **For DFA minimum number of states will be n+1.**
-    - **For NFA minimum number of states will be n+2.**
+    - **For DFA minimum number of states will be n+2.**
+    - **For NFA minimum number of states will be n+1.**
 
 - Example: L = { 01,011}
 - $|W_{max}|$ = 3
-- 4 states in DFA and 5 states in NFA
+- 5 states in DFA and 4 states in NFA  
 ![DFA](image-73.png)
 - remove dead state for NFA
 
-- Example: L = {$ a^{n}b^{n} | n \le 2 $}
-- L = {$ \epsilon, ab, aabb $}
+- Example: L = { $a^{n}b^{n} | n \le 2$ }
+- L = { $\epsilon, ab, aabb$ }
 - $|W_{max}|$ = 4
-- 5 states in DFA and 6 states in NFA
+- 6 states in DFA and 5 states in NFA  
 ![DFA](image-74.png)
 - remove dead state for NFA
 
 # Followed by something type
 
 ## Any number of a's followed by any number of b's
-## L = { $ a^{n}b^{m} | n, m \ge 0 $ }
+## L = { $a^{n}b^{m} | n, m \ge 0$ }
 
-- L =  { $ \epsilon, a, aa, aaa, ..., $
+- L =  { $\epsilon, a, aa, aaa, ...,$
           b, bb, bbb, bbbb, ....,
           ab, aab, abb, abbb, ... }
-- Infinite Language, $|W_{min}|$ = 1
+- Infinite Language, $|W_{min}|$ = 1  
 ![DFA](image-75.png)
 - For, NFA remove the q2 dead state
 
-## L = { $ a^{n}b^{m} | n, m \ge 1 $ }
+## L = { $a^{n}b^{m} | n, m \ge 1$ }
 
-- L =  { ab, aab, abb, abbb, ... }
+- L =  { ab, aab, abb, abbb, ... }  
 ![Alt text](image-76.png)
 - For, NFA remove the q3 dea state
 
-## L = { $ a^{n}b^{m}c^{p} | n, m,p \ge 0 $ }
+## L = { $a^{n}b^{m}c^{p} | n, m,p \ge 0$ }
 
 ![NFA](image-77.png)
 
-## L = { $ a^{n}b^{m}c^{p} | n, m,p \ge 1 $ }
+## L = { $a^{n}b^{m}c^{p} | n, m,p \ge 1$ }
 
 ![DFA](image-78.png)
 
 ## In general if
-## L = { $ a^{n}b^{m}c^{p}d^{q}e^{r} | n, m,p,q,r \ge 1 $ }
+## L = { $a^{n}b^{m}c^{p}d^{q}e^{r} | n, m,p,q,r \ge 1$ }
 - NFA =6, DFA = 7
-## L = { $ a^{n}b^{m}c^{p}d^{q}e^{r} | n, m,p,q,r \ge 0 $ }
+## L = { $a^{n}b^{m}c^{p}d^{q}e^{r} | n, m,p,q,r \ge 0$ }
 - NFA =5, DFA = 6
 
-## L = {$ a^{n} b^{m} | n,m \ge 0 $} then DFA for $L^{C}$?
+## L = { $a^{n} b^{m} | n,m \ge 0$ } then DFA for $L^{C}$ ?
 
-- Image-75 is for L = {$ a^{n} b^{m} | n,m \ge 0 $}
+- Image-75 is for L = { $a^{n} b^{m} | n,m \ge 0$ }
 - For, $L^{C}$, we have to change the final states to non-final states and vice-versa. (DFA)
 
-## L = {$ a^{n} b^{m} | n,m \ge 1 $} then DFA for $L^{C}$?
-- Image-76 is for L = {$ a^{n} b^{m} | n,m \ge 1 $}
+## L = { $a^{n} b^{m} | n,m \ge 1$ } then DFA for $L^{C}$ ?
+- Image-76 is for L = { $a^{n} b^{m} | n,m \ge 1$ }
 - For, $L^{C}$, we have to change the final states to non-final states and vice-versa. (DFA)
 - This is same for question for strings starting with b or only a's or containing substring ba.
 
-## L = {$ a^{n} b^{m} c^{p} | n,m,p \ge 0 $} then DFA for $L^{C}$?
+## L = { $a^{n} b^{m} c^{p} | n,m,p \ge 0$ } then DFA for $L^{C}$ ?
 
-- Image-77 is for L = {$ a^{n} b^{m} c^{p} | n,m,p \ge 0 $}
+- Image-77 is for L = { $a^{n} b^{m} c^{p} | n,m,p \ge 0$ }
 - For, $L^{C}$, we have to change the final states to non-final states and vice-versa. (DFA)
 
 ## Every "a" is followed by a "b"
@@ -76,7 +76,7 @@
 - Any number of initial b's are accepted so loop b over q0
 - If a occurs then jumg to other state, also don't make it final as we at least one b behind any a occurred.
 - Now for q1, if a occurs then dead state
-- if b occurs jump to other final state.
+- if b occurs jump to other final state.  
 ![DFA](image-79.png)
 
 ## Complement of every "a" is followed by a "b"

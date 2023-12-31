@@ -1,13 +1,13 @@
 **Q. Consist of SubString 'aa'**
 
-- L = {aa, aaa, aaaa, baa, aab, ... }
+- L = {aa, aaa, aaaa, baa, aab, ... }  
 ![NFA](image-42.png)
 ![DFA](image-43.png)
 
-**Q. Consist of SubString 'ab'**
+**Q. Consist of SubString 'ab'**  
 ![DFA](image-44.png)
 
-**Q. Consist of SubString 'a' OR atleast one a**
+**Q. Consist of SubString 'a' OR atleast one a**  
 ![DFA](image-45.png)
 
 > If n length of string then NFA,DFA = n+1
@@ -28,14 +28,14 @@
 
 **Q. Number of 'a' are not divisible by three**
 
-- Complementary state so we know how to change with it
+- Complementary state so we know how to change with it  
 ![Alt text](image-47.png)
 
 **Note: L ($\overline{M}$) = $\overline{L}$(M) in DFA, not in NFA**
 
 **Q. L = { w | w $\in$ {a,b}* and $n_{a}$(w) congruent to 1 mod 3}**
 
-$ n_{a} $(w) congrunet 1 mod 3 => $ n_{a} $(w) mod 3 = 1
+$n_{a}$ (w) congrunet 1 mod 3 => $n_{a}$ (w) mod 3 = 1
 - Same as one question above
 
 **Q. L = { w | w $\in$ {a,b}* and $n_{a}$(w) congruent to k mod m}**
@@ -47,7 +47,7 @@ $ n_{a} $(w) congrunet 1 mod 3 => $ n_{a} $(w) mod 3 = 1
 
 **Q. Divisible by 2 or 3**
 - 6 states (As LCM(2,3) = 6)
-- 1st, 3rd, 4th and 5th states are final state
+- 1st, 3rd, 4th and 5th states are final state  
 ![Alt text](image-48.png)
 
 **Q. Divisible by 4 or 6**
@@ -61,7 +61,7 @@ $ n_{a} $(w) congrunet 1 mod 3 => $ n_{a} $(w) mod 3 = 1
 **Q. a is divisible by 3 and b is divisible by 2**
 
 - Create col of 3 as a divisible by 3
-- Create row of 2 as b divisible by 2
+- Create row of 2 as b divisible by 2  
 ![Alt text](image-49.png)
 
 **Q. a mod 3 = 1 and b mod 2 = 1**
@@ -91,24 +91,24 @@ $ n_{a} $(w) congrunet 1 mod 3 => $ n_{a} $(w) mod 3 = 1
 - Now for complement we need to change final state to non final state and non final state to final state
 - q4, q5 are final states
 
-**For Questions like number of a's are even and number of b's are odd**
+**For Questions like number of a's are even and number of b's are odd**  
 ![Alt text](image-50.png)
 
 **Q. Number of 0 mod 3 = 0 and number of 1 mod 4 = 1**
-> Note: the diagram orientation is transposed
+> Note: the diagram orientation is transposed  
 ![Alt text](image-51.png)
 
 ### Number of a's - Number of b's divisible by something
 
 **Q. Number of a's - Number of b's divisible by 3**
 
-- First create for number of a's divisible by 3
+- First create for number of a's divisible by 3  
 ![Alt text](image-52.png)
 
 - now direct b in such according to how we get remainder 0, 1, 2
 - If b occurs at q0 we will have strings like b, aaab, aaaaaab, ... (Number of a's - Number of b's mod 3 will be 2, So direct b to q2)
 - If b occurs at q1 we will have strings like ab, aaaab, aaaaaaab, ... (Number of a's - Number of b's mod 3 will be 0, So direct b to q1)
-- If b occurs at q2 we will have strings like aab, aaaaab, aaaaaaaab, ... (Number of a's - Number of b's mod 3 will be 1, So direct b to q1)
+- If b occurs at q2 we will have strings like aab, aaaaab, aaaaaaaab, ... (Number of a's - Number of b's mod 3 will be 1, So direct b to q1)  
 ![Alt text](image-53.png)
 
 ### **Q. Construct an FA which accepts all those binary strings whose decimal equivalent is divisible by 3**
@@ -133,7 +133,7 @@ $ n_{a} $(w) congrunet 1 mod 3 => $ n_{a} $(w) mod 3 = 1
 
 ### **Q. Construct an FA which accepts all those binary strings whose decimal equivalent is divisible by 3 except null**
 
-- Just insert a dummy initial state which performs task of 3m
+- Just insert a dummy initial state which performs task of 3m  
 ![Alt text](image-55.png)
 
 ### **Q. Construct an FA which accepts all those binary strings whose decimal equivalent is divisible by 5**
