@@ -8,21 +8,26 @@
 
 ![Notations](image.png)
 
-![Transition Diagram](image-1.png) <br>
-From Diagram: <br>
-    - Q = {q0,q1,q2} <br>
-    - $\Sigma$ = {a} <br>
-    - $\delta$ : <br>
+![Transition Diagram](image-1.png)
+
+From Diagram:
+    - Q = {q0,q1,q2}
+    - $\Sigma$ = {a}
+    - $\delta$ :
         - $\delta(q_{0},a)$ = { $q_{1}$ } <br>
         - $\delta(q_{1},a)$ = { $q_{2}$ } <br>
         - $\delta(q_{2},a)$ = { $q_{0}$ } <br>
     - $q_{0}$ = q0 <br>
-    - f = { $q_{2}$ } <br>
-**Delta Diagram** <br>
+    - f = { $q_{2}$ }  
+
+**Delta Diagram**  
+
 ![Delta Function Diagram](image-2.png)
 
 ### Example 1 Related to Above Transition Diagram
-![General Visualization Example](image-3.png) <br>
+
+![General Visualization Example](image-3.png)  
+
 Here $\Sigma$ = {a} <br>
 $\therefore \Sigma^{*} ={ \{\epsilon, a, aa, aaa, ...  \}} $ <br>
 **From Below Definition Accepted Strings will be**
