@@ -4,7 +4,7 @@
 - LHS -> RHS
 - LHS is a single non-terminal
 - RHS is non-terminal followed by any number of terminals or a single terminal $(NT^{*})/T^{*}$<br>**OR**<br> Any number of terminals followed by a non-terminal or a single terminal $(T^{*}N)/T^{*}$
->Note both, should accpet any one of the two
+>Note both, should accept any one of the two
 
 ### Examples:
 - A -> aS ✅

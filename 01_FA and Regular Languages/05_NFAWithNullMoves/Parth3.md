@@ -10,11 +10,11 @@
 
 - Step 1:
     - Find all the states that can be reached from the different states using null moves (Epsilon Closure).
-        - $ \hat \delta(q_{0}, \epsilon) = \{ q_{0},q_{1},q_{2}  \} $
-        - $ \hat \delta(q_{1}, \epsilon) = \{ q_{1},q_{2}  \} $
-        - $ \hat \delta(q_{2}, \epsilon) = \{ q_{2}  \} $
+        - $\hat \delta(q_{0}, \epsilon) = \{ q_{0},q_{1},q_{2}  \}$
+        - $\hat \delta(q_{1}, \epsilon) = \{ q_{1},q_{2}  \}$
+        - $\hat \delta(q_{2}, \epsilon) = \{ q_{2}  \}$
 - From this we can get which states are final for NFA without null moves.
-    - $ F = \{ q_{0},q_{1},q_{2}  \} $
+    - $F = \{ q_{0},q_{1},q_{2}  \}$
     - We get which state will be final by checking it's epsilon closure, if it contains any final state then it will be final state.
 
 - Step 2:
@@ -43,17 +43,17 @@
 () means final state
 
 - Step 3:
-    - Create the diagram from the table.
+    - Create the diagram from the table.  
 ![Answer](image-11.png)
 
-**Q. Convert the following NFA with null moves to NFA without null moves**
+**Q. Convert the following NFA with null moves to NFA without null moves**  
 ![Question Image](image-12.png)
 
 - Epsilon CLosure of all states
-    - $ \hat \delta(q_{0}, \epsilon) = \{ q_{0},q_{1},q_{3}  \} $
-    - $ \hat \delta(q_{1}, \epsilon) = \{ q_{1},q_{3}  \} $
-    - $ \hat \delta(q_{2}, \epsilon) = \{ q_{2}  \} $
-    - $ \hat \delta(q_{3}, \epsilon) = \{ q_{3}  \} $
+    - $\hat \delta(q_{0}, \epsilon) = \{ q_{0},q_{1},q_{3}  \}$
+    - $\hat \delta(q_{1}, \epsilon) = \{ q_{1},q_{3}  \}$
+    - $\hat \delta(q_{2}, \epsilon) = \{ q_{2}  \}$
+    - $\hat \delta(q_{3}, \epsilon) = \{ q_{3}  \}$
 
 - Transition Table
 
@@ -81,10 +81,10 @@
 ![Question Image](image-13.png)
 
 - Epsilon CLosure of all states
-    - $ \hat \delta(q_{0}, \epsilon) = \{ q_{0},q_{1},q_{2},q_{3}  \} $
-    - $ \hat \delta(q_{1}, \epsilon) = \{ q_{1},q_{2}  \} $ 
-    - $ \hat \delta(q_{2}, \epsilon) = \{ q_{2}  \} $
-    - $ \hat \delta(q_{3}, \epsilon) = \{ q_{3},q_{2}  \} $
+    - $\hat \delta(q_{0}, \epsilon) = \{ q_{0},q_{1},q_{2},q_{3}  \}$
+    - $\hat \delta(q_{1}, \epsilon) = \{ q_{1},q_{2}  \}$
+    - $\hat \delta(q_{2}, \epsilon) = \{ q_{2}  \}$
+    - $\hat \delta(q_{3}, \epsilon) = \{ q_{3},q_{2}  \}$
 
 - Transition Table
 

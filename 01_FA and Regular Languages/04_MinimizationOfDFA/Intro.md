@@ -4,7 +4,7 @@ DFA --Algorithm--> min DFA
 - Step 2: Group all states into two sets: Final and Non-Final.
 - Step 3: Check Behavior of each state with respect to each input symbol.
 
-**Find minimized DFA for the following DFA:**
+**Find minimized DFA for the following DFA:**  
 ![Alt text](image.png)
 
 - From step 1: we eliminate state q5 because it is unreachable.
@@ -64,14 +64,14 @@ Now no further breaking possible and also q3 and q6 have same behavior so we can
 | (q4) | q2 | q36 |
 | q7 | q1 | q0 |
 
-**Q. Find minimized DFA for the following DFA:**
+**Q. Find minimized DFA for the following DFA:**  
 ![Alt text](image-1.png)
 
-**Ans.**
+**Ans.**  
 ![Solution](image-2.png)
 
-**Q. Find minimized DFA for the following DFA:**
+**Q. Find minimized DFA for the following DFA:**  
 ![Question](image-3.png)
 
-**Ans.**
+**Ans.**  
 ![Solution](image-4.png)

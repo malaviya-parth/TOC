@@ -5,14 +5,14 @@
 - In the NFA diagram if there is a path from one state to other state with null move, means it can move to other state without reading any input symbol, then it is called NFA with null move.
 
 - Whenever there is a null move we have two choices either we can take null move or we can take input symbol.
-- Like in the below image
+- Like in the below image  
 ![Diagram](image.png)
 - Even if there is no input symbol we still have two choices either we can take null move or stay at the same state.
 
 - We can convert this NFA with Null move to NFA without null move by using Algorithm.
 - Hence Power of NFA with null move is equal to power of NFA without null move is equal to power of DFA.
 
-**Q. What language is accepted by below NFA with null move?**
+**Q. What language is accepted by below NFA with null move?**  
 ![GATE Question](image-1.png)
 
 - There is nothing to jump from initial with $\epsilon$ as input. so null is not possible.
@@ -20,7 +20,7 @@
 - Similarly we can go with a $\epsilon \epsilon a \epsilon$ == aa to final state.
 - Hence all strings with a's are accepted by this NFA.
 
-**Q. What language is accepted by below NFA with null move?**
+**Q. What language is accepted by below NFA with null move?**  
 ![Alt text](image-2.png)
 - L = $\{a^{n}b^{m}c^{p} | n,m,p \geq 0\}$
 
@@ -32,17 +32,17 @@
 - We write $\hat{\delta}$ = Q x $\Sigma^{*}$ -> Q || Q x $\Sigma^{*}$ -> $2^{Q}$
 
 
-- $\hat{\delta}$(q0,ababab) = $\delta$($\hat{\delta}$(q0,ababa),b)
-- $\hat{\delta}$(q,y) = $\delta$($\hat{\delta}$(q,x),a) where y = xa
-- $\hat{\delta}$(q,x) = $\hat{\delta}$($\hat {\delta} $(q,y),z) where x = yz, y and z are strings.
+- $\hat{\delta}$ (q0,ababab) = $\delta$ ( $\hat{\delta}$ (q0,ababa),b)
+- $\hat{\delta}$ (q,y) = $\delta$ ( $\hat{\delta}$ (q,x),a) where y = xa
+- $\hat{\delta}$ (q,x) = $\hat{\delta}$ ( $\hat {\delta}$ (q,y),z) where x = yz, y and z are strings.
 
-- Example
+- Example  
 ![Alt text](image-3.png)
 
-- Solve $\hat{\delta}$(q0,ababab)
+- Solve $\hat{\delta}$ (q0,ababab)
 - break it into $\hat{\delta}$(q0,ababa) and b
 - further keep breaking it until we get a single symbol
-- Now keep solving it in reverse order
+- Now keep solving it in reverse order  
 ![Example](image-4.png)
 
 #### **Above is true only in the case of DFA**

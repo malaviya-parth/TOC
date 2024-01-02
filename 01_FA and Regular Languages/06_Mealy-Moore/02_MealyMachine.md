@@ -9,24 +9,24 @@
     - λ is the output function where λ: Q x ∑ -> O
 
 - Example of Mealy Machine
-    - For $ \Sigma = {a, b}$ and $ O = {0, 1}$, the Moore machine can give output as follows:
-    - $ \lambda (q0, a) = \epsilon $
-    - $ \lambda$ (q0, b) = 1
-    - $ \lambda$ (q1, a) = 0
-    - $ \lambda$ (q1, b) = 1011
-    - $ \lambda$ (q2, a) = 1000101
-    - $ \lambda$ (q2, b) = 010111
+    - For $\Sigma = \{a, b\}$ and $O = \{0, 1\}$, the Moore machine can give output as follows:
+    - $\lambda (q0, a) = \epsilon$
+    - $\lambda$ (q0, b) = 1
+    - $\lambda$ (q1, a) = 0
+    - $\lambda$ (q1, b) = 1011
+    - $\lambda$ (q2, a) = 1000101
+    - $\lambda$ (q2, b) = 010111
 
 #### Representation of Mealy Machine
 
-- Table Diagram and State Diagram
+- Table Diagram and State Diagram  
 ![Both Diagrams](image-7.png)
 
 ### Output difference for both Moore and Mealy Machine
 
 - Here we have made a table which can be Moore as it constains only one output column and Mealy as it contains one output column and one input column.
 
-| Present State | $ \frac{Input/New State}{(a)}$ | Output |
+| Present State | $\frac{Input/New State}{(a)}$ | Output |
 |---------------|-----------------|--------|
 | q0            | q1              | 0      |
 | q1            | q2              | 0      |
@@ -45,7 +45,7 @@
     - Now we are at q3 -> 1
         - From table now we move to state q4
     - Now we are at q4 -> 0
-        - From table now we move to state q0
+        - From table now we move to state q0  
 ![Alt text](image-8.png)
 - In image last one will have 0
 
@@ -68,7 +68,7 @@
 - Trick to find 2's Complement
     - Traverse the String in reverse order
     - Find the first 1 from right
-    - Flip all the bits after that 1
+    - Flip all the bits after that 1  
 ![Answer](image-10.png)
 
 # Gate Question

@@ -40,7 +40,7 @@
 
 ## Question 2: Creating from state transition diagram
 
-- a modulo 3 counter
+- a modulo 3 counter  
 ![Moore Machine](image-14.png)
 
 ![Mealy Machine](image-15.png)

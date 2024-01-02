@@ -17,7 +17,7 @@
 - O is a non-empty finite set of output symbols
 - δ is a transition function which maps Q x Σ -> Q
 - λ is a output function which maps Q x Σ -> O
-- Here $ \delta$ here state Q x Σ -> Q (Similar to DFA) and λ here state Q x Σ -> O
+- Here $\delta$ here state Q x Σ -> Q (Similar to DFA) and λ here state Q x Σ -> O
 
 #### Moore Machine: are finite state machines with output value and its output depends only on the present state. 
 
@@ -30,22 +30,22 @@
     - λ is the output function where λ: Q -> O
 
 - Example of Moore Machine
-    - For $ \Sigma = {a, b}$ and $ O = {0, 1}$, the Moore machine can give output as follows:
-    - $ \lambda (q0) = \epsilon $
-    - $ \lambda$ (q1) = 100
-    - $ \lambda$ (q2) = 010111
+    - For $\Sigma = {a, b}$ and $O = {0, 1}$, the Moore machine can give output as follows:
+    - $\lambda (q0) = \epsilon$
+    - $\lambda$ (q1) = 100
+    - $\lambda$ (q2) = 010111
 
-- Good Example
+- Good Example  
 ![Moore Machine](image.png)
 
 ##### Construct a Moore Machine which generate a residue modulo 3 as output when input is binary number
 
-![Answer](image-1.png)
+![Answer](image-1.png)  
 - Easy trick to make such machine is just run a cycle of 3 states (as modulo 3) in horizontal manner. 
 - We have learnt making such machine in DFA - NFA construction section in divisible by 3 section.
 - Here 0,1,2 written in output state is residue modulo 3 means if we are at state 0 written in circle is 0 means number is divisible by 3.
 
-- If input string is 1001 then output will be 0
+- If input string is 1001 then output will be 0  
 ![1001](image-2.png)
 
 - If input string is 10101011 then output will be 1
@@ -55,7 +55,7 @@
 ![Answer](image-3.png)
 - Easy trick to make such machine is just run a cycle of 5 states (as modulo 5) in horizontal manner.
 
-##### Construct a Moore Machine whic hgives output 1 on every occurence of substring "ab" in input string
+##### Construct a Moore Machine which gives output 1 on every occurence of substring "ab" in input string
 
 ![Answer](image-4.png)
 - First of all make states with their output, form a basic structure of reading ab as input and giving output 1

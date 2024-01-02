@@ -8,7 +8,7 @@
 ### Type 0: Unrestricted / Universal Grammar
     - No restriction on the rules
     - For LHS -> RHS
-    - LHS can be any string with atleat one non-terminal symbol
+    - LHS can be any string with atleast one non-terminal symbol
     - RHS can be any string
     - Example: aA -> acbd
                aABcd -> acbDE
@@ -20,7 +20,7 @@
 Example: aA -> acbd
          aABcd -> acbDE
 
-- Now we know length of $\epsilon$ is 0 although S-> $\epsilon$ is accepted provided S must be reused i.e. not appear in RHS of any rule (So only allowed with start symbol)
+- Now we know length of $\epsilon$ is 0 although S-> $\epsilon$ is accepted provided S must not be reused i.e. not appear in RHS of any rule (So only allowed with start symbol)
 
 Example: <br>
 1. S --> $\epsilon$/A ✅
@@ -58,6 +58,6 @@ A -> aS ❌
 | A -> ϵ | ✅ | ❌ | ✅ | 
 - Last one is exception states Type-2 allows null production but not Type-1
 
-### Why Null Production is not allowed in Type-2?
+### Why Null Production is not allowed in Type-1?
 #### Answer: There is an algorithm to remove Nul production from the Grammar keeping the language same, but it runs only on Type-2 and Type-3 Grammar
 

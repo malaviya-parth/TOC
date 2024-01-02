@@ -66,8 +66,8 @@
 - b. Any number of a's followed by any number of b's (Correct Answer)
 - c. All possible Strings over a & b which 'b' is not followed by 'a' (Correct Answer)
 - d. All possible Strings over a & b which doesn't contain 'ba' as substring (Correct Answer)
-- e. L = { $ a^{n}b^{m}  | n \geq 0, m \geq 0 $ } (Correct Answer)
-- f. L = { $ a^{n}b^{n}  | n \geq 0 $ } (It misses the strings like aab, abb, aabbbb, etc)
+- e. L = { $a^{n}b^{m}  | n \geq 0, m \geq 0$ } (Correct Answer)
+- f. L = { $a^{n}b^{n}  | n \geq 0$ } (It misses the strings like aab, abb, aabbbb, etc)
 
 ### Question 7
 ![Alt text](image-14.png)

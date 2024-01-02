@@ -14,7 +14,7 @@
 
 - For each state find the output from the table
 - If one state goes to different outputs for different inputs, then create a new state for each output
-- While filling next state for splitted inputs it will be same for both as parent in Mealy Machine
+- While filling next state for splitted inputs it will be same for both, as of parent in Mealy Machine
 
 #### Moore Machine Table
 
@@ -27,7 +27,7 @@
 | $q3_{a}$      |$q3_{b}$|$q3_{a}$|    a    |
 | $q3_{b}$      |$q3_{b}$|$q3_{a}$|    b    |
 
-- Now for any input of Mealy there will be same output for Moore but initial state will give an extra output, to deal with it we can ignore it or can add an dummy initial state as q0 and make it initial state.
+- Now for any input of Mealy there will be same output for Moore but initial state will give an extra output, to deal with it we can ignore it or can add an dummy initial state as q0' and make it initial state.
 
 | Present State | Input (0) | Input (1) | Output |
 |---------------|--------|--------|----------|
