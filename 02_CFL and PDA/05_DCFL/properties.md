@@ -1,4 +1,4 @@
-## CLosure Properties
+## Closure Properties
 
 1. Transpose:-
     - ❌, DCFL is not closed under transpose
@@ -47,7 +47,7 @@
 
 1. Regular, CFL, REC are closed under all operations
 2. DCFl $\rightarrow$ closed under compliment
-3. CSL $\rightarrow$ Not closed under compliment, set difference, & intersection
+3. CFL $\rightarrow$ Not closed under compliment, set difference, & intersection
 4. RE $\rightarrow$ Not closed under compliment, & set difference
 5. All are closed under union with regular language & intersection with regular language
 
