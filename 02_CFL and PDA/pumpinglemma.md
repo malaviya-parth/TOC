@@ -5,7 +5,7 @@
 - If L be CFL & W $\in$ L such that |w| $\geq$ n for some +ve integer n then w can be decomposedd into 5 parts w = abcde such that:
     - |bd| $\gt$ 0 [|b| can be 0 & |d| can be 0, but |bd| $\neq$ 0]
     - 1 $\leq$ |bcd| $\leq$ n
-    - $\forall i \geq 0$ ab$^i$cd$^i$e $\in$ L
+    - $\forall i \geq 0$ $ab^i cd^ie \in$ L
 
-## L = {$x^ny^nz^n$ | n $\geq$ 0} is not CFL. by pumping lemma.
+## L = { $x^ny^nz^n$ | n $\geq$ 0 } is not CFL. by pumping lemma.
 - we can only take b and d two variables here we need to maintain 3 variables eqaul so not possible.
