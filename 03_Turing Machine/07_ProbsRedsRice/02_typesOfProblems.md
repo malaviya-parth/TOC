@@ -105,7 +105,7 @@
 ## Ambiguity Problem
 - Is given Language Ambiguous?
 - Ambiguous Language means we cannot write Unambiguous grammar for it.
-  - L = a^nb^nc^m $\cup$ a^nb^mc^m
+  - L = $a^nb^nc^m \cup a^nb^mc^m$
   - Grammar: S -> S1/S2 and other stuff
   - Now if W = aabbcc, we can get it through either S1 or S2 hence, ambiguity.
 
@@ -217,7 +217,7 @@
   - Compliment of Regularity of CFL
   - It is Undecidable
 
-16. Givne TM accept non-empty language?
+16. Given TM accept non-empty language?
   - Compliment of emptiness of RE
   - Undecidable
 
@@ -225,7 +225,7 @@
   - Compliment of Emptiness of CFL
   - It is Decidable
 
-18. Given L = { <G> | is type 3 & L(G) is finite}. Is L REC?
+18. Given L = { \<G\> | is type 3 & L(G) is finite}. Is L REC?
   - Checking Finiteness of Regular
   - It is Decidable
   - Hence, L is REC.
@@ -235,7 +235,7 @@
   - Given language is RE but not REC as Diagonalization Languages as Non-RE.
   - Hence, it is NOT REC.
 
-20. L = {<G> | G is tyoe1 & L(G) is finite}. Is L REC?
+20. L = { \<G\> | G is type1 & L(G) is finite}. Is L REC?
   - Checking Finiteness of CSL
   - It is Undecidable.
   - Hence, It is not REC
@@ -265,7 +265,7 @@
   - If checking languages then Undecidable.
   - It is decidable.
 
-26. Is the givne CSG, CFG?
+26. Is the given CSG, CFG?
   - It is Decidable
   - Note here we are checking grammar not the languages.
   - If checking languages then Undecidable.

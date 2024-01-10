@@ -1,5 +1,5 @@
 - In countability we have seen that for every turing machine there exists a binary string.
-- We can also claim that every for binary string there exists a Turing Machine, now if string is not according to the standards of encoding we learnt, we can say that the turing machien we got from the string accepts $\phi$ language.
+- We can also claim that for every binary string there exists a Turing Machine, now if string is not according to the standards of encoding we learnt, we can say that the turing machine we got from the string accepts $\phi$ language.
 - Like if String is 0 or 1 or 01 or 11, these strings are not proper binary encoding of a Turing machine.
   - Still we can say there exists a turing machine whose binary encoding is like those given above but the thing is those TMs will not accept any language.
   - All those binary encoding of TMs are subset of **Diagonalization Language.**

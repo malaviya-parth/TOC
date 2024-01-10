@@ -6,13 +6,13 @@
   - India to US < Buy Ticket
   - Buy Ticket < Earn Money
 - We can say if B is Decidable then A is Decidable
-- **To proove given problem as decideable simply reduce given problem to known decidable problem.**
-- **To proove problem is Undecidable simply reduce a known Undecidable problem to your problem.**
+- **To prove given problem as decideable simply reduce given problem to known decidable problem.**
+- **To prove problem is Undecidable simply reduce a known Undecidable problem to your problem.**
 - Reducibility says nothing about solving A or B alone, but only about the solvability of A in the presence of a solution to B.
 - We can say A is Less Hard than B. 
 
 ## Question
-To proove Problem A as Decidable we will  
+To prove Problem A as Decidable we will  
 1. Reduce A to Subset Sum problem
 2. Reduce A to Halting Problem of Turing Machine
 3. Reduce subset Sum to A
@@ -22,7 +22,7 @@ To proove Problem A as Decidable we will
 - Option A
 
 ## Question
-To proove Problem A as Undecidable we will  
+To prove Problem A as Undecidable we will  
 1. Reduce Halting Problem of FA to A 
 2. Reduce Halting Problem of TM to A
 3. Reduce Halting Problem of PDA to A
@@ -44,11 +44,11 @@ To proove Problem A as Undecidable we will
   - RE membership problem to Halting problem of Turing Machine
   - Compliment of RE Mermbership Problem to Halting Problem of Turing Machine
   - Hence Halting Problem is Undecidable
-  - Also we reduced, ***Non-RE to RE.***
+  - Also we reduced, ***Non-RE to RE.***  
 ![Alt text](image-1.png)
 - In Above Figure,
 - Above Diagram is of Compliment of Membership set of RE
-- Beloew Diagram is of Halting Problem of TM.
+- Below Diagram is of Halting Problem of TM.
 
 > **NOTE:**  
 > If Halting Problem is decidable then every RE will be REC and hence all those Non-RE whose compliment is RE will also become REC.  

@@ -51,10 +51,10 @@ L1 $\cup$ L2 = RE is trivial property?
 - But we can't call it as language because language is set of strings & not set of binary strings
 - For each RE language we have infinite TM accepting it.
 - Hence consider binary encoding of all such TMs & that will make language corresponding to property P.
-- Lp = { <M> | L(M) satisfies property P}
+- Lp = { \<M\> | L(M) satisfies property P}
 - M is the binary encoding of the Turing Machine
 - Rice Theorem says that, If P is non-trivial then Lp is not REC.
-- Rice THeorem does not say
+- Rice Theorem does not say
   - If P is trivial property then Lp is REC.
 
 ## How to apply Rice Theorem:
@@ -64,19 +64,19 @@ L1 $\cup$ L2 = RE is trivial property?
     - Because there would be some languages which will have 010 and there would be some languages which will not have 010.
     - It belongs to the non-trivial property.
     - The language is not Recursive
-    - L = { <M> | 010 $\in$ L(M) }
+    - L = { \<M\> | 010 $\in$ L(M) }
 
-2. Does the given RE language empty? (OR) DOes the given TM accept empty language
+2. Is the given RE language empty? (OR) Does the given TM accept empty language
     - There will be a language which is empty and other will be non-empty.
     - Hence non-trivial property.
     - So, it is Undecidable.
-    - L = { <M> | L(M) = $\phi$ }
+    - L = { \<M\> | L(M) = $\phi$ }
     - This language is not Recursive
 
 3. Does the given Language is $\Sigma^{*}$?
     - Undecidable Problem
     - Non-trivial Property
-    - L = { <M> | L(M) = $\Sigma^{*}$ }
+    - L = { \<M\> | L(M) = $\Sigma^{*}$ }
 
 4. Does the given RE Language has more than 5 strings?
     - Undecidable Problem
@@ -195,7 +195,7 @@ L1 $\cup$ L2 = RE is trivial property?
 
 ## Questions
 
-1. L = { <M> | 010 $\in$ L(M) }
+1. L = { \<M\> | 010 $\in$ L(M) }
     - The given property is non-trivial so, it is Undecidable
     - The given property is monotone, because any superset of it will obviously contain 010
     - Since, Monotone we cannot tell directly about language, we need to check whether we can make TM for it or not.
@@ -206,72 +206,72 @@ L1 $\cup$ L2 = RE is trivial property?
       - Third Tape contains states
     - Hence, the given Language is RE but not REC
 
-2. $\bar{L}$ = { <M> | 010 $\notin$ L(M) }
+2. $\bar{L}$ = { \<M\> | 010 $\notin$ L(M) }
     - Since above one was RE but not REC, hence this is it's compliment and will be Non-RE.
 
-3. L = { <M> | L(M) = $\phi$ }
+3. L = { \<M\> | L(M) = $\phi$ }
     - The given property is non-trivial so it is Undecidable.
     - Also it is non-monotonic, Since there would be superset of it where L(M) will not be $\phi$.
     - Therefore the given language will be Non-RE.
 
-4. $\bar{L}$ = { <M> | L(M) $\neq \phi$ }
+4. $\bar{L}$ = { \<M\> | L(M) $\neq \phi$ }
     - The given L(M) has Language has non-trivial Property
     - Also, the property is monotone.
     - So, we need to check by making a TM for it.
     - TM for it is possible, just read one character and you arrive to final state
     - Therefore the given language is RE but not REC.
 
-5. L = { <M> | L(M) = $\Sigma^{*}$ }
+5. L = { \<M\> | L(M) = $\Sigma^{*}$ }
     - The property is non-trivial (There will be other languages != $\Sigma^{*}$ )
     - Also, the property is monotone
-    - As $\Sigma^{*}$ contains infinite number of strings, so there is no way we can reach them in finite time even with Dow TIlling process of constructing TM.
+    - As $\Sigma^{*}$ contains infinite number of strings, so there is no way we can reach them in finite time even with Dow Tilling process of constructing TM.
     - Hence, TM for this is not possible.
     - Given Language is Non-RE.
 
-6. L = { <M> | L(M) $\neq \Sigma^{*}$ }
+6. L = { \<M\> | L(M) $\neq \Sigma^{*}$ }
     - It is non-trivial property (There will be a Language = $\Sigma^{*}$ )
     - Also, the property is non-monotone
     - Therefore, the language is Non-RE.
 
-7. L = { <M> | L(M) is finite }
+7. L = { \<M\> | L(M) is finite }
     - It is non-trivial (There will be infinite languages)
     - Also the property is non-monotonic
     - Hence the given L is Non-RE.
 
-8. $\bar{L}$ = { <M> | L(M) is infinite }
+8. $\bar{L}$ = { \<M\> | L(M) is infinite }
     - It is non-trivial property
     - Also the property is monotonic, so we need to check by whehter TM for it is possible or not.
     - Not possible because in finite time we cannot reach to infinite length string
     - Therefore the language is Non-RE.
 
-9. L = { <M> | |L(M)| > 5 }
+9. L = { \<M\> | |L(M)| > 5 }
     - It is non-trivial (String with length less than 5)
     - It is monotonic property
     - TM for the string is possible ( We don't have to check upto infinite we just need to check if length crosses 5 or not)
     - Hence, it is RE but not REC.
 
-10. $\bar{L}$ = { <M> | |L(M)| $\leq$ 5 }
+10. $\bar{L}$ = { \<M\> | |L(M)| $\leq$ 5 }
     - Compliment of that hence non-RE.
 
-11. L = { <M> | L(M) is regular }
+11. L = { \<M\> | L(M) is regular }
     - Non-trivial ( There would be RE languages which will not be regular.)
     - Non-monotone as superset can be languages which are CSL,CFL,REC,RE but not REG.
     - Therefore the language is Non-RE.
 
-12. $\bar{L}$ = { <M> | L(M) is not Regular }
+12. $\bar{L}$ = { \<M\> | L(M) is not Regular }
     - Non-trivial
     - Non-monotone (Superset 0\*1\* is regular)
     - Non-RE language
 
-13. L = { <M> | L(M) is CFL }
+13. L = { \<M\> | L(M) is CFL }
     - Same case as of regular, Non-RE
 
-14. L = { <M> | L(M) is RE }
+14. L = { \<M\> | L(M) is RE }
     - Trivial property
     - Decidable
     - REC
 
-15. L = { <M> | L(M) is Non-RE }
+15. L = { \<M\> | L(M) is Non-RE }
     - Trivial property
     - Decidable
     - REC
@@ -285,7 +285,7 @@ L1 $\cup$ L2 = RE is trivial property?
 
 17. L = { <M1,M2> | L(M1) $\neq$ L(M2) }
     - To check what we do is to find the L which is present in L(M1) but not in L(M2) or vice versa.
-    - e can't find find not in case because the smaller Turing machine will go to halt and hence UTM will halt, can't say Yes about it.
+    - We can't find, in case because the smaller Turing machine will go to halt and hence UTM will halt, can't say Yes about it.
     - Non-RE Language
 
 18. L = { <M1,M2> | L(M1) $\subseteq$ L(M2) }

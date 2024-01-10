@@ -22,10 +22,10 @@
 - So, it will resemble to Halting Problem.
 - Hence, it is Undecidable.
 
-## How to proove given problem P is Undecidable?
+## How to prove given problem P is Undecidable?
 - Reduce a known Undecidable Problem to P.
 
-## How to proove P is Decidable?
+## How to prove P is Decidable?
 - Reduce P to a known Decidable problem.
 
 # State Entry Problem

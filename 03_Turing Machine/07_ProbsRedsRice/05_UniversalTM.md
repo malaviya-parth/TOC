@@ -3,7 +3,7 @@
 - It is given input of Machine and String pair by doing Binary encoding.
   - Machine Encoding is stored on First Tape.
   - String Binary Code is stored on Second Tape.
-  - On third tape state is stored, initial it will have binary code of initial state, and then keeps on updating according to he simulation.
+  - On third tape state is stored, initial it will have binary code of initial state, and then keeps on updating according to the simulation.
 ![Alt text](image-2.png)
 
 ## Important Points
