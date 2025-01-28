@@ -61,7 +61,7 @@
     - Therefore, $\hat{\delta}$(q,y) = {q0,q4,q3} where y = xa = ababab
 
 #### A point don't know the heading of this point
-- $\hat{\delta}$(q,x) = {$q_{i} | i = 1,...,n$}
+- $\hat{\delta}$(q,x) = { $q_{i} | i = 1,...,n$ }
 - $\hat{\delta}$(q,y) = $\bigcup_{i=1}^{n} \delta(q_{i},z)$ where y = xz
 
 - Example
